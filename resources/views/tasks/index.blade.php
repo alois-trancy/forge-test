@@ -27,7 +27,7 @@
                         <form action="{{ route('tasks.destroy', $task->id) }}" method="POST"> 
                             {{ csrf_field() }}
                             {{ method_field('DELETE') }}
-                            <button type="submit" class="btn btn-danger">Delete</button>
+                            <button type="submit" class="btn btn-danger">Deletea</button>
                         </form>
                     </td>
                 </tr>
