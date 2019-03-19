@@ -3,6 +3,7 @@
 namespace App\Console\Commands;
 
 use App\Task;
+use Carbon\Carbon;
 use Illuminate\Console\Command;
 
 class AddTaskCommand extends Command
