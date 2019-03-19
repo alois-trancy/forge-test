@@ -1,0 +1,12 @@
+To generate SSH key
+
+	ssh-keygen -t rsa -C "<email_address>"
+
+	To copy the generated SSH key
+
+		clip < id_rsa.pub
+
+To connect to SSH (e.g. to forge)
+
+	ssh forge@(server_ip)
+
