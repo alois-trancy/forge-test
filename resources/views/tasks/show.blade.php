@@ -19,13 +19,13 @@
 			<td>{{{ $task->name }}}</td>
 			<td>{{{ $task->description }}}</td>
             <td>
-                <button type="button" class="btn btn-info" href="{{ route('tasks.edit', $task->id) }}">Edit</button>
+                <a class="btn btn-info" href="{{ route('tasks.edit', $task->id) }}">Edit</a>
             </td>
             <td>
             	<form action="{{ route('tasks.destroy', $task->id) }}" method="POST">
                     {{ csrf_field() }}
                     {{ method_field('DELETE') }}
-                    <button type="button" class="btn btn-danger">Delete</button>                            
+                    <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
             </td>
 		</tr>
